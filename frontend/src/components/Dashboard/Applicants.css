@@ -1,0 +1,82 @@
+.applicants {
+  padding: 20px;
+}
+
+.applicantCardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.applicantCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.applicantColumn1 {
+  flex: 3;
+}
+
+.applicantColumn2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.applicantCard h3 {
+  margin: 0 0 10px;
+}
+
+.applicantCard p {
+  margin: 5px 0;
+}
+
+.rejectBtn, .viewResumeBtn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rejectBtn {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.rejectBtn:hover {
+  background-color: #e60000;
+}
+
+.viewResumeBtn {
+  background-color: #48aaf5;
+  color: #fff;
+}
+
+.viewResumeBtn:hover {
+  background-color: #037de9;
+}
+
+.viewResumeBtn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+  .applicants{
+    padding: 10px;
+  }
+  .applicants h1{
+    font-size: 24px;
+  }
+  .applicantColumn1{
+    flex: 1.5;
+  }
+}

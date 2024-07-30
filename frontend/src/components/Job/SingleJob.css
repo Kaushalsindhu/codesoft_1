@@ -1,0 +1,85 @@
+.single-job-card {
+    width: 90%;
+    padding: 20px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.single-job-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+}
+
+.single-job-details, .single-job-requirements {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.single-job-details p, .single-job-requirements p {
+    font-size: 17px;
+    margin: 0.2em 0;
+    color: #3d3d3d;
+    letter-spacing: .5px;
+}
+.single-job-details p strong, .single-job-requirements p strong{
+    font-size: 18px;
+    font-weight: 600;
+}
+.single-job-card h2{
+    font-size: 28px;
+    text-align: center;
+    color: #3d3d3d;
+    letter-spacing: 1px;
+}
+
+.apply-btn, .save-btn {
+    position: absolute; 
+    bottom: 2em;
+    right: 5em; 
+    padding: 0.5em 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.save-btn{
+    right: 12em;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (max-width: 1100px){
+    .single-job-info {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .single-job-info {
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .single-job-info{
+        flex-direction: column;
+    }
+    .single-job-details, .single-job-requirements {
+        padding-right: 0;
+    }
+    .apply-btn, .save-btn {
+        position: static; 
+        bottom: auto;
+        right: auto; 
+        margin-right: 20px;
+    }
+}

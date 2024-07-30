@@ -1,0 +1,110 @@
+.companyProfile h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.profileForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileForm label {
+  margin-bottom: 10px;
+}
+
+.profileForm input,
+.profileForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profileForm button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+.profileForm button[type="button"] {
+  background-color: #6c757d;
+}
+
+.profileDetails p {
+  margin-bottom: 10px;
+}
+
+.profileDetails a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.profileDetails button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+.profileDetails {
+  background-color: #f0f8ff; 
+  border: 1px solid #d1e7ff; 
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profileDetails p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; /* Dark gray text */
+  margin: 10px 0;
+}
+
+.profileDetails p strong {
+  color: #007bff; /* Blue color for labels */
+}
+
+.profileDetails a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.profileDetails a:hover {
+  text-decoration: underline;
+}
+
+.profileDetails button {
+  display: inline-block;
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin: 20px auto 0 auto
+}
+
+.profileDetails button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media only screen and (max-width: 600px) {
+  .companyProfile{
+    padding: 0 15px;
+  }
+  .companyProfile h1 {
+    font-size: 28px;
+  }
+}

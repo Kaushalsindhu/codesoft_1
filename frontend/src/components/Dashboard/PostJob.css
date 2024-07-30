@@ -1,0 +1,55 @@
+.newJobPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.jobFormDiv {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.jobForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobForm input,
+.jobForm select,
+.jobForm textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+.jobForm input:focus,
+.jobForm select:focus,
+.jobForm textarea:focus{
+  outline: 2px solid skyblue;
+}
+
+.jobForm button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.jobForm button:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 600px){
+  .jobForm select{
+    width: 80%;
+  }
+}

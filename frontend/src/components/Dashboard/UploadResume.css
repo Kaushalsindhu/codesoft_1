@@ -1,0 +1,89 @@
+.upload-resume{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.resume-display{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.frameDiv{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.frameDiv iframe{
+  height: 100%;
+  width: 100%;
+}
+
+.removeBtn{
+  width: fit-content;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(247, 90, 90);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.removeBtn:focus{
+  transform: scale(0.9);
+}
+
+
+.upload-button{
+  display: flex;
+  flex-direction: column;
+}
+.upload-button input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.upload-button label {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.upload-button label:hover {
+  background-color: #0056b3;
+}
+
+.upload-button button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button button:hover {
+  background-color: #218838;
+}
+
+.upload-button button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 600px){
+
+}

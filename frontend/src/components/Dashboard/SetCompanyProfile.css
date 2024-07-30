@@ -1,0 +1,77 @@
+.setCompanyProfile {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.setCompanyProfile h2 {
+  text-align: center; 
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.setCompanyProfile .form-group {
+  margin-bottom: 15px;
+}
+
+.setCompanyProfile .form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.setCompanyProfile .form-group input,
+.setCompanyProfile .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.setCompanyProfile .form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.setCompanyProfile .form-group input[type="url"] {
+  padding-right: 30px;
+}
+
+.setCompanyProfile .form-group input:focus,
+.setCompanyProfile .form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.setCompanyProfile .btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.setCompanyProfile .btn:hover {
+  background-color: #0056b3;
+}
+
+.setCompanyProfile .btn:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 600px){
+  .setCompanyProfile{
+    width: 95%;
+  }
+}

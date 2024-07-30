@@ -1,0 +1,122 @@
+.dashboard{
+    width: 100%;
+    height: 80vh;
+    padding: 20px;
+    display: flex;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    border-radius: 25px;
+    padding: 0 40px;
+    background-color: #add8e6;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashScreen{
+    width: 80%;
+    height: 100%;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #add8e6;
+    overflow-y: scroll;
+}
+
+.emp-options{
+    margin-top: 50px;
+}
+
+.emp-options button{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #add8e6;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+.emp-options button:hover{
+    background-color: blue;
+    color: white;
+}
+.emp-options button:hover .sidebarLink{
+    color:white
+}
+.sidebarLink{
+    width: 100%;
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+    transition: all 0.4s;
+}
+ 
+.postBtn{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(49, 49, 243);
+    color: white;
+    border: none;
+    transition: all 0.4s;
+}
+.postBtn:hover{
+    transform: scale(1.1);
+}
+.postBtnLink{
+    color:white;
+}
+
+@media only screen and (max-width: 1100px){
+    .dashboard{
+        padding: 10px;
+    }
+    .sidebar{
+        width: 20%;
+        margin-right: 10px;
+        padding: 0 10px;
+    }
+    .dashScreen{
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .dashboard{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .sidebar{
+        height: fit-content;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+    .dashScreen{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .postBtn{
+        width: 50%;
+        height: 40px;
+    }
+    .emp-options{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .dashboard{
+        padding: 5px;
+        height: 90vh;
+    }
+    .sidebar{
+        margin-bottom: 5px;
+    }
+    .dashScreen{
+        padding: 10px 0;
+    }
+}

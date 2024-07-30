@@ -1,0 +1,161 @@
+.job-container{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  padding: 25px 0;
+}
+
+.job-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+ 
+.jobSearchDiv{
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+  border-radius: 15px;
+}
+.jobSearchDiv input{
+  height: 100%;
+  width: 70%;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  padding: 0 20px;
+  outline: 2px solid transparent;
+  font-size: 15px;
+}
+.jobSearchDiv input:focus{
+  border: none;
+  outline: 2px solid #4285f4;
+}
+.jobSearchDiv button{
+  height: 100%;
+  width: 20%;
+  border: none;
+  border-radius: 20px;
+  background-color: #007bff;
+  padding: 0 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.jobSearchDiv button:hover{
+  background-color: #288ffc;
+}
+
+.job-card {
+  padding: 30px 20px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  position: relative;
+  transition: all 0.3s;
+}
+  
+.job-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.job-link{
+  padding: 6px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.job-link:hover{
+  background-color: #288ffc;
+}
+  
+.job-details, .job-requirements {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.job-details h2{
+  font-size: 23px;
+  text-align: start;
+  color: #3d3d3d;
+}
+.job-info p{
+  color: #3d3d3d;
+}
+.strong{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.apply-btn, .save-btn {
+  position: absolute;
+  bottom: 1em;
+  right: 1em; 
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.save-btn{
+  right: 7em;
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 1300px){
+  
+}
+
+@media only screen and (max-width: 1100px){
+  .jobSearchDiv{
+    width: 50vw;
+  }
+  .jobSearchDiv input{
+    width: 70%;
+  }
+  .jobSearchDiv button{
+    width: 20%;
+  }
+  .job-list{
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .job-list{
+    width: 95vw;
+  }
+  .jobSearchDiv{
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .jobSearchDiv{
+    width: 95vw;
+  }
+  .jobSearchDiv input{
+    width: 70%;
+  }
+  .jobSearchDiv button{
+    width: 25%;
+  }
+  .job-list{
+    width: 95vw;
+  }
+  .job-card{
+    padding: 20px 0;
+  }
+}

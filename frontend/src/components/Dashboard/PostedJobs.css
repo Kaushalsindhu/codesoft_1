@@ -1,0 +1,110 @@
+.postedJobs {
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.postedJobs h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.jobCardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jobCard {
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.posted-description{
+  margin-bottom: 20px;
+}
+
+.jobColumn {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.jobColumn1 {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.jobContent h3 {
+  margin-top: 0;
+  color: #007BFF;
+}
+
+.jobCard p {
+  margin-bottom: 20px;
+}
+
+.applicantsBtn, .deleteBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #f44336;
+  color: white;
+}
+.applicantsBtn {
+  right: 120px;
+}
+
+.deleteBtn:hover, .applicantsBtn:hover {
+  background-color: #e0201d;
+}
+  
+
+@media only screen and (max-width: 1100px){
+  .postedJobs{
+    padding: 0 10px;
+  }
+  .jobCard{
+    padding: 20px 5px;
+  }
+  .jobColumn{
+    padding: 0 7px;
+  }
+  .jobColumn1{
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .postedJobs{
+    padding: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .postedJobs h1 {
+    font-size: 28px;
+  }
+  .jobCard{
+    flex-direction: column;
+  }
+  .jobCard h3{
+    font-size: 22px;
+  }
+  .posted-description{
+    display: none;
+  }
+  .nextLine{
+    display: none;
+  }
+}
